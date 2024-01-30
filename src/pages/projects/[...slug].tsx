@@ -66,7 +66,7 @@ export default function SingleProjectPage({ code, frontmatter }: ProjectType) {
         <section className=''>
           <div className='layout'>
             <CloudinaryImg
-              publicId={`theodorusclarence/${frontmatter.banner}`}
+              publicId={`${frontmatter.banner}`}
               alt={frontmatter.title}
               width={1440}
               height={792}

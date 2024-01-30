@@ -14,8 +14,8 @@ All notable changes to this project will be documented in this file. See [standa
 * **blog:** add react-core-concept-useeffect ([fd3221f](https://github.com/theodorusclarence/theodorusclarence.com/commit/fd3221fc35c64dd7564d6968d901739d2844b79d))
 * change about picture ([040a039](https://github.com/theodorusclarence/theodorusclarence.com/commit/040a039863f0da27bde6d3eda153d90e5d5e3b02))
 * move public id to env ([15af1af](https://github.com/theodorusclarence/theodorusclarence.com/commit/15af1af836a9d85d459b910722b26b2026c0b4b7))
-* **proj:** add hexcape ([00997a1](https://github.com/theodorusclarence/theodorusclarence.com/commit/00997a10c436815c1c9b77a54c7b0c3402c75c2b))
-* **proj:** add media coverage to hexcape ([2d5b022](https://github.com/theodorusclarence/theodorusclarence.com/commit/2d5b022a973e2517f588c6d9de31ce26aa32a8fa))
+* **proj:** add E-Stores ([00997a1](https://github.com/theodorusclarence/theodorusclarence.com/commit/00997a10c436815c1c9b77a54c7b0c3402c75c2b))
+* **proj:** add media coverage to E-Stores ([2d5b022](https://github.com/theodorusclarence/theodorusclarence.com/commit/2d5b022a973e2517f588c6d9de31ce26aa32a8fa))
 * update trf bca and add mandiri ([f56ae81](https://github.com/theodorusclarence/theodorusclarence.com/commit/f56ae81af92f8c4fb964799504f772a8a85b17bd))
 
 ## [3.0.0](https://github.com/theodorusclarence/theodorusclarence.com/compare/v2.0.0...v3.0.0) (2022-09-02)

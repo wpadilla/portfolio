@@ -2,22 +2,24 @@ import clsx from 'clsx';
 import * as React from 'react';
 import { IoLogoVercel } from 'react-icons/io5';
 import {
+  SiAngular,
   SiFirebase,
   SiGit,
   SiGoogleanalytics,
   SiJavascript,
   SiMarkdown,
   SiMongodb,
-  SiNextdotjs,
+  SiNextdotjs, SiNgrx,
   SiNodedotjs,
   SiNotion,
   SiPrettier,
   SiReact,
   SiRedux,
-  SiSass,
+  SiSass, SiSpring, SiSpringboot,
   SiSwift,
   SiTailwindcss,
   SiTypescript,
+  SiPrime, SiKotlin,
 } from 'react-icons/si';
 
 import Tooltip from '@/components/Tooltip';
@@ -52,6 +54,18 @@ const techList = {
   react: {
     icon: SiReact,
     name: 'React',
+  },
+  angular: {
+    icon: SiAngular,
+    name: 'angular',
+  },
+  ngrx: {
+    icon: SiNgrx,
+    name: 'ngrx',
+  },
+  spring: {
+    icon: SiSpring,
+    name: 'spring',
   },
   nextjs: {
     icon: SiNextdotjs,
@@ -116,5 +130,9 @@ const techList = {
   swift: {
     icon: SiSwift,
     name: 'Swift',
+  },
+  kotlin: {
+    icon: SiKotlin,
+    name: 'Kotlin',
   },
 };

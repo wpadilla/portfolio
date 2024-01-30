@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <footer className='mt-4 pb-2'>
       <main className='layout flex flex-col items-center border-t pt-6 dark:border-gray-600'>
-        <FooterLinks />
+        {/*<FooterLinks />*/}
 
         {spotifyFlag && <Spotify className='mt-8' />}
 
@@ -28,7 +28,7 @@ export default function Footer() {
         <SocialLinks />
 
         <p className='mt-8 text-sm text-gray-600 dark:text-gray-300'>
-          © Theodorus Clarence {new Date().getFullYear()}
+          © Williams J. Padilla {new Date().getFullYear()}
           {feedbackFlag && (
             <>
               {' • '}
@@ -85,14 +85,14 @@ function SocialLinks() {
                 ? 'Click the mail logo to copy'
                 : 'Copied to clipboard 🥳'}
               <Accent className='inline-block font-medium'>
-                me@theodorusclarence.com
+                wilfre_padilla@hotmail.com
               </Accent>
             </div>
           }
         >
           <button
             onClick={() => {
-              copy('me@theodorusclarence.com').then(() => {
+              copy('wilfre_padilla@hotmail.com').then(() => {
                 setCopyStatus('copied');
                 setTimeout(() => setCopyStatus('idle'), 1500);
               });
@@ -191,7 +191,7 @@ type Social = {
 };
 const socials: Social[] = [
   {
-    href: 'https://clarence.link/github',
+    href: 'https://github.com/wpadilla',
     icon: SiGithub,
     id: 'Github',
     text: (
@@ -201,7 +201,7 @@ const socials: Social[] = [
     ),
   },
   {
-    href: 'https://clarence.link/linkedin',
+    href: 'https://www.linkedin.com/in/williams-j-padilla-paulino-9a3868186/',
     icon: SiLinkedin,
     id: 'Linkedin',
     text: (
@@ -210,15 +210,15 @@ const socials: Social[] = [
       </>
     ),
   },
-  {
-    href: 'https://clarence.link/twt',
-    icon: SiTwitter,
-    id: 'Twitter',
-    text: (
-      <>
-        I post updates, tips, insight, and sometimes do some talk. Follow me on{' '}
-        <Accent className='font-medium'>Twitter</Accent>!
-      </>
-    ),
-  },
+  // {
+  //   href: 'https://clarence.link/twt',
+  //   icon: SiTwitter,
+  //   id: 'Twitter',
+  //   text: (
+  //     <>
+  //       I post updates, tips, insight, and sometimes do some talk. Follow me on{' '}
+  //       <Accent className='font-medium'>Twitter</Accent>!
+  //     </>
+  //   ),
+  // },
 ];
