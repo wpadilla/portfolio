@@ -5,10 +5,10 @@ import { openGraph } from '@/lib/helper.client';
 
 const defaultMeta = {
   title: 'Williams Jesus Padilla Paulino',
-  siteName: 'portfolio-rdj52t6vh-wpadilla.vercel.app',
+  siteName: 'williamspadilla.vercel.app',
   description:
     'An online portfolio and blog by Williams J. Padilla. Showcase of my projects, and some of my thoughts about website development.',
-  url: 'https://portfolio-rdj52t6vh-wpadilla.vercel.app/',
+  url: 'https://williamspadilla.vercel.app/',
   image: 'https://res.cloudinary.com/dlb3sq4t2/image/upload/v1706805438/wp-favicon.ico',
   type: 'website',
   robots: 'follow, index',

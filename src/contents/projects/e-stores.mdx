@@ -85,9 +85,44 @@ Discover more treasures by scrolling down on the homepage, where a continuous sh
 
 Once your order is placed, our efficient B-Bot swings into action, meticulously filling in all necessary details for shipping. Need a human touch? It seamlessly connects you with available staff for personal assistance. From order creation to delivery, B-Bot keeps you informed about your order's progress and estimated arrival time.
 
-> ## Problems & Solutions
+> ## Challenges & Solutions
 
-- Handling User interaction with B-Bot 🤖
+I spearheaded the development of a chatbot designed to streamline the process of handling product orders from initiation through to delivery. This involved architecting and implementing a sophisticated bot logic capable of managing the various stages of an order's lifecycle, including status updates such as pending information, pending confirmation, confirmed, in delivery, and delivered.
+
+**Chatbot Overview:**
+
+The core objective of the chatbot was to automate interactions across different stakeholders in the order process—namely the buyer, seller, and delivery agent. To achieve this, I designed an event-driven architecture that allowed for modular handling of order statuses. This architecture facilitated a dynamic response system, where the chatbot could adapt its interactions based on the current status of an order.
+
+**Technical Implementation:**
+
+1. **Modular Logic Design:** The chatbot's logic was segmented according to order status. This modular approach ensured tailored interactions for each phase of the order, enhancing user experience and operational efficiency.
+
+2. **Event-Driven Architecture:** By leveraging an event-driven model, I enabled the chatbot to execute status-specific logic through an event handler. This was further optimized by implementing a recursive function that allowed the chatbot to continuously process and respond to user inputs, effectively advancing the order status and engaging relevant parties as needed.
+
+3. **Interaction Loop:** The chatbot's interaction flow was meticulously designed to ensure a seamless exchange of information:
+- Initiate with a bot query.
+- Capture and process the response from the buyer, seller, or delivery agent.
+- Provide the next set of instructions or updates based on the current order status.
+- Utilize conditions tailored to the respondent's role and order status to determine the continuation of the loop.
+
+**Challenges and Solutions:**
+
+1. **Multi-Agent Interaction:** Coordinating the chatbot's interaction with diverse order stakeholders presented a significant challenge. I addressed this by introducing an authorization layer that identified the user role (buyer, seller, delivery agent), allowing for role-specific logic execution and facilitating precise tracking and communication throughout the order's lifecycle.
+
+2. **Optimizing Response Times:** To enhance the chatbot's responsiveness, I devised a dual-strategy:
+- **Local Store Implementation:** A local caching mechanism was introduced to store active orders, significantly reducing dependency on real-time database updates and thus improving interaction speed.
+- **Real-Time Synchronization:** Leveraging socket.io, I established a real-time communication channel between the local store, the central database, and the admin module. This ensured that all parts of the system remained in sync without compromising the user interaction flow.
+
+3. **Efficient Resource Management:** Implementing a garbage collection mechanism for the local store was crucial in maintaining optimal performance. By purging completed or cancelled orders, system resources were efficiently utilized, ensuring scalability and responsiveness.
+
+**Conclusion:**
+
+This project not only stretched my technical and architectural capabilities but also honed my skills in designing and implementing complex, real-time interaction systems. Overcoming the challenges of multi-agent coordination, response optimization, and system synchronization was instrumental in delivering a robust and efficient chatbot solution that significantly improved the order handling process.
+
+---
+
+**Others Challenges faced:**
+
 - Handling detail view option selection
 - Handling Store Management
 - Handling SSG with NextJs
